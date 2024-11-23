@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <title> shakereveal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Bungee Spice", sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+        }
+
+        h1 {
+            font-size: 80px;
+            color: beige;
+            text-shadow: -3px 10px 10px rgba(232, 195, 82, 0.401);
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            animation: textfloat 3s linear infinite alternate;
+        }
+
+        @keyframes textfloat {
+            0% {
+                rotate: 15deg;
+            }
+
+            50% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: -15deg;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>manish
+        <br>
+        web devolper
+    </h1>
+</body>
+
+</html>

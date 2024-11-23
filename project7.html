@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Bungee Spice", sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+        }
+
+        h1 {
+            font-size: 80px;
+            color:#fff;
+            text-shadow: -3px 5px 10px rgba(232, 195, 82, 0.401);
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            
+            position: relative;
+        }
+        h1::before{
+            content: "SUBSCRIBE...";
+            position: absolute;
+            top:0;
+            left:0;
+            font-size: 80px;
+            width: 100%;
+            color: rgb(215, 212, 22);
+            text-transform: uppercase;
+            border-right: 2px solid rgb(215, 212, 22);
+            overflow: hidden;
+            animation: move 2s linear infinite alternate;
+        }
+        @keyframes move{
+            0%{
+                width: 100%;
+            }
+            100%{
+                width: 0%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>SUBSCRIBE...</h1>
+</body>
+</html>

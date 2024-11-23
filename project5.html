@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shake</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+            /* size: 10rem; */
+
+        }
+
+        button {
+            padding: 30px 60px;
+            border: 10px solid #865dff;
+            text-align: center;
+            color: #865dff;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 40px;
+            background-color: transparent;
+            /* box-shadow: 0 0 100px 30px #cd3f49; */
+            &:hover {
+                border: 10px solid red;
+                color:red;
+                animation: shake 0.2s linear  ;
+    
+            }
+        }
+        
+
+        @keyframes shake {
+            0% {
+                rotate: 20deg;
+            }
+
+
+            50% {
+                rotate: 0deg;
+            }
+
+
+
+            100% {
+                rotate: -20deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button">shake</button>
+</body>
+
+</html>

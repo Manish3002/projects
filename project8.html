@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solar eclipse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Bungee Spice", sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: rgb(241, 181, 201);
+            display: grid;
+            place-items: center;
+        }
+
+        .square {
+            width: 400px;
+            aspect-ratio: 1;
+
+            background-color: rgb(216, 175, 12);
+            border: 2px solid red;
+            border-radius: 10px;
+            /* animation: ; */
+            display: grid;
+            place-items: center;
+            animation: blacking 10s ease-in-out infinite;
+
+
+        }
+
+        .circle {
+            width: 200px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: rgba(236, 110, 56, 0.648);
+
+            position: relative;
+            overflow: hidden;
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: inherit;
+                aspect-ratio: 1;
+                /* padding: 10px; */
+                background-color: black;
+                border-radius: inherit;
+                animation: moonwalk 10s ease-in-out infinite;
+            }
+        }
+
+        @keyframes moonwalk {
+            0% {
+                translate: 100%;
+                scale: 1;
+            }
+
+            50% {
+                translate: 0%;
+                scale: 0.95;
+            }
+            100%{
+                translate: -100%;
+                scale: 1;
+            }
+        }
+        @keyframes blacking{
+            0%{
+                background-color: rgb(216, 175, 12);
+            }
+            25%{
+                background-color: rgb(81, 66, 4);
+            }
+            50%{
+                background-color: rgb(0, 0, 0);
+            }
+            75%{
+                background-color: rgb(81, 66, 4);
+            }
+            100%{
+                background-color: rgb(216,175,12);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square">
+        <div class="circle"></div>
+    </div>
+
+</body>
+
+</html>
