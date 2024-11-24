@@ -78,8 +78,10 @@ li {
 }
 .grid-three--cols{
     grid-template-columns: repeat(3, 1fr);
-    
+}
 
+.grid-four--cols{
+    grid-template-columns: repeat(4, 1fr);
 }
 
 
@@ -95,6 +97,22 @@ li {
 }
 .section-common-subheading{
     color: var(--heading-color);
+}
+.fa-brands{
+    padding: 2.4rem;
+    background-color:var(--supporing-color);
+    font-size: 2.4rem;
+    border-radius: 50%;
+    color:var(--heading-color);
+
+}
+
+.fa-solid{
+    padding: 2.4rem;
+    background-color:var(--supporing-color);
+    font-size: 2.4rem;
+    border-radius: 50%;
+    color:var(--heading-color);
 }
 
 .btn {
@@ -284,3 +302,26 @@ transition: all 0.3s linear;
 
 
 /**** about Section end****/
+
+/* Start Course Section */
+.section-course .grid{
+    gap:3.2rem;
+
+}.section-course .course-div{
+   padding:  3.2rem;
+}
+
+.section-course .course-div:hover{
+   
+    box-shadow: var(--btn-box-shadow);
+  
+}
+
+
+
+
+
+
+
+/* end Course Section */
+
