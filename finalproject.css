@@ -112,7 +112,7 @@ li {
     background-color:var(--supporing-color);
     font-size: 2.4rem;
     border-radius: 50%;
-    color:var(--heading-color);
+    color:var(--btn-hover-bg-color);
 }
 
 .btn {
@@ -317,6 +317,30 @@ transition: all 0.3s linear;
   
 }
 
+.course-div:nth-child(2) .icon .fa-solid{
+   color: #68bf9b;
+   background-color: #e7f6eb;
+}
+.course-div:nth-child(3) .icon .fa-solid{
+   color: #e01d6b;
+   background-color: #ebbcbc;
+}
+.course-div:nth-child(4) .icon .fa-solid{
+   color: #d988b9;
+   background-color:rgb(247, 233, 238);
+}
+.course-div:nth-child(5) .icon .fa-solid{
+   color: #ff9b50;
+   background-color: #f6dfce;
+}
+.course-div:nth-child(6) .icon .fa-solid{
+   color: #183d3d;
+   background-color: #ccf7f7;
+}
+.course-div:nth-child(7) .icon .fa-solid{
+   color: #1450a3;
+   background-color: #a3c4f3;
+}
 
 
 
